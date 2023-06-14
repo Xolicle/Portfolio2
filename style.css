@@ -14,7 +14,7 @@ body {
 
 h1,
 h2,
-h3 {
+h3, h4 {
   text-align: center;
   margin: 0;
 }
@@ -29,7 +29,7 @@ h2 {
   
 }
 
-h3 {
+.intro h3, .content-section h3 {
   font-size: 24px;
   opacity: 0.7;
   font-family: 'Poppins', sans-serif;
@@ -135,6 +135,77 @@ h3 {
   border-radius: 10px;
 }
 
+.contact-container{
+  width: 80%;
+  padding: 130px 20px;
+  margin: 50px auto;
+  /* font-family: 'Poppins', sans-serif; */
+  
+}
+
+.contact-box{
+  display: flex;
+}
+
+.contact-left{
+  flex-basis: 60%;
+  padding: 10px 40px;
+  /* border: 1px solid red; */
+}
+
+.contact-right{
+  flex-basis: 40%;
+  padding: 10px;
+  background: var(--primary-color) ;
+  color: var(--secondary-color);
+}
+.input-group{
+  justify-content: space-between;
+  margin-bottom: 20px;
+  
+}
+.input-group .input-item{
+  flex-basis: 45%;
+
+}
+input{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+label{
+  margin-bottom: 4px;
+  color: var(--primary-color);
+}
+.contact-left h3{
+  color: var(--primary-color);
+  
+}
+.contact-btn{
+  width: 100px;
+  border: none;
+  outline: none;
+  background: var(--primary-color) ;
+  color: #fff;
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.social-icons{
+  
+  font-size: 36px;
+}
+
+
 /*  */
 
 @media (max-width: 900px) {
@@ -150,6 +221,9 @@ h3 {
   .content-section {
     padding: 80px 20px;
   }
-  
+  .contact-box{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
